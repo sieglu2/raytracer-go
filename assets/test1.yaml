@@ -1,0 +1,62 @@
+output_image:
+  width: 1024
+  height: 768
+  background:
+    x: 0
+    y: 0
+    z: 0
+  output_filepath: "./assets/output.png"
+
+camera:
+  center:
+    x: 0
+    y: 0
+    z: 0
+  direction:
+    x: 0
+    y: 0
+    z: 10
+
+recursion_depth: 10
+
+spheres:
+  - center:
+      x: 0
+      y: 0
+      z: 20
+    radius: 3
+    materials:
+      ambient:
+        type: ambient
+        color:
+          x: 0.7
+          y: 0.3
+          z: 0.6
+      diffuse:
+        type: diffuse
+        color:
+          x: 0.3
+          y: 0.9
+          z: 0.1
+      specular:
+        type: specular
+        color:
+          x: 0.4
+          y: 0.4
+          z: 0.4
+
+lights:
+  - type: point_light
+    center:
+      x: 0
+      y: 5
+      z: 10
+    color:
+      x: 0.9
+      y: 0.9
+      z: 0.9
+  - type: ambient_light
+    color:
+      x: 0.3
+      y: 0.3
+      z: 0.3
